@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Prijava na radionice</title>
+  </head>
+  <body>
+    <h1>Prijava na radionice programiranja</h1>
+    <p>Popunite formu kako biste se prijavili na radionice.</p>
+
+    <form>
+      <label for="ime">Ime i prezime:</label><br>
+      <input type="text" id="ime" name="ime" required><br>
+
+      <label for="email">E-mail adresa:</label><br>
+      <input type="text" id="email" name="email" required><br>
+
+      <p>Vaše predznanje programiranja:</p>
+      <input type="radio" id="pocetni" name="nivo" value="pocetni" required>
+      <label for="pocetni">Početni</label><br>
+      <input type="radio" id="srednji" name="nivo" value="srednji">
+      <label for="srednji">Srednji</label><br>
+      <input type="radio" id="napredni" name="nivo" value="napredni">
+      <label for="napredni">Napredni</label>
+
+      <p>Radionice koje želite pohađati:</p>
+      <input type="checkbox" id="html" name="radionica" value="html">
+      <label for="html">HTML i CSS</label><br>
+      <input type="checkbox" id="python" name="radionica" value="python">
+      <label for="python">Python osnove</label><br>
+      <input type="checkbox" id="git" name="radionica" value="git">
+      <label for="git">Git i GitHub</label><br>
+      <input type="checkbox" id="sql" name="radionica" value="sql">
+      <label for="sql">Baze podataka (SQL)</label><br><br>
+
+      <input type="submit" value="Prijavi se">
+    </form>
+  </body>
+</html>
