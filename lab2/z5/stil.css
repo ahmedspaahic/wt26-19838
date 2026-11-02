@@ -1,0 +1,30 @@
+html{
+    background-color: #e6d707;
+}
+
+
+.naslov{
+    text-align: center;
+    font-size: large;
+}
+
+th{
+    background-color: grey;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table{
+    width: 99%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.prva-kolona{
+    text-align: left;
+}
