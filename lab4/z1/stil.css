@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  max-width: 480px;
+  margin: 30px auto;
+}
+
+#sazetak {
+  font-weight: bold;
+}
+
+#lista {
+  list-style: none;
+  padding: 0;
+}
+
+#lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#lista li.zavrseno {
+  background-color: #e6f4e6;
+  color: #777;
+}
+
+#lista li.zavrseno .tekst {
+  text-decoration: line-through;
+}
+
+button {
+  cursor: pointer;
+}

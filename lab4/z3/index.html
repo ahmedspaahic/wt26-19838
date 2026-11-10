@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutorijal 4, Zadatak 3</title>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+  <h1>Evidencija troškova</h1>
+
+  <form id="forma">
+    <input type="text" id="naziv" placeholder="Naziv">
+    <input type="text" id="iznos" placeholder="Iznos (npr. 12.50)" size="16">
+    <button type="submit">Dodaj</button>
+  </form>
+  <p id="greska" class="greska" hidden></p>
+
+  <table id="tabela">
+    <tr>
+      <th>Naziv</th>
+      <th>Iznos (KM)</th>
+    </tr>
+    <tr>
+      <td>Prijevoz</td>
+      <td data-iznos="25">25.00</td>
+    </tr>
+    <tr>
+      <td>Hrana</td>
+      <td data-iznos="40.5">40.50</td>
+    </tr>
+    <tr>
+      <td>Knjige</td>
+      <td data-iznos="60">60.00</td>
+    </tr>
+    <tr id="zbir" class="zbir">
+      <td id="zbirNaziv">Ukupno (3 stavke)</td>
+      <td id="zbirIznos">125.50</td>
+    </tr>
+  </table>
+
+  <script src="skripta.js"></script>
+</body>
+</html>

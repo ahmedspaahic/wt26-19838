@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutorijal 4, Zadatak 2</title>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+  <h1>Nova obavijest</h1>
+
+  <form id="forma">
+    <label for="naslov">Naslov</label>
+    <input type="text" id="naslov">
+
+    <label for="tekst">Tekst obavijesti</label>
+    <textarea id="tekst" rows="4"></textarea>
+
+    <fieldset>
+      <legend>Kategorija</legend>
+      <label><input type="radio" name="kategorija" value="vazno" checked> Važno</label>
+      <label><input type="radio" name="kategorija" value="informacija"> Informacija</label>
+    </fieldset>
+
+    <p id="greska" class="greska" hidden></p>
+
+    <button type="button" id="pregled">Pregled</button>
+    <button type="button" id="ponisti">Poništi</button>
+  </form>
+
+  <h2>Pregled</h2>
+  <div id="prikaz" class="prikaz">
+    <span id="prikazKategorija" class="oznaka"></span>
+    <h3 id="prikazNaslov">Nema pregleda</h3>
+    <p id="prikazTekst">Popunite formu i kliknite na dugme Pregled.</p>
+  </div>
+
+  <script src="skripta.js"></script>
+</body>
+</html>
